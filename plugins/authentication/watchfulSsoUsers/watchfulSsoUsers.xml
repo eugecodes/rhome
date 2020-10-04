@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="authentication" method="upgrade">
+    <name>Authentication - Watchful SSO</name>
+    <author>Watchful.li</author>
+    <creationDate>2015-09-16</creationDate>
+    <license>GPL</license>
+    <authorEmail>info@watchful.li</authorEmail>
+    <authorUrl>http://watchful.li</authorUrl>
+    <version>1.1</version>
+    <description><![CDATA[
+  <img src="https://watchful.li/app/images/logo.png" style="float: left;margin: 0 10px 10px 0" />
+  <h1>Watchful SSO - Authentification Plugin</h1>
+  <p>Authentification with a SSO Watchful account <a href="https://watchful.li">More informations</a></p>
+  ]]></description>
+    <scriptfile>watchfulSsoUsers.install.php</scriptfile>
+    <files>
+        <filename plugin="watchfulSsoUsers">watchfulSsoUsers.php</filename>
+        <filename>index.html</filename>
+        <folder>class</folder>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="log_level" type="list" default="31" label="Log level" description="Set logging level">
+                    <option value="15">Error</option>
+                    <option value="31">Warning</option>
+                    <option value="255">Debug</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

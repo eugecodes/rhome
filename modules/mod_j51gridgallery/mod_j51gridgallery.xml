@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>J51_GridGallery</name>
+	<author>Joomla51</author>
+	<creationDate>May 2014</creationDate>
+	<copyright>Copyright (C)2014 Joomla51</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>http://www.joomla51.com</authorUrl>
+	<version>1.0</version>
+	<description>GridGallery module by Joomla51</description>
+
+	<files>
+		<filename module="mod_j51gridgallery">mod_j51gridgallery.php</filename>
+		<filename module="mod_j51gridgallery">mod_j51gridgallery.xml</filename>
+		<filename module="mod_j51gridgallery">helper.php</filename>
+		<filename module="mod_j51gridgallery">License.txt</filename>		
+		<filename module="mod_j51gridgallery">index.html</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+		<folder>elements</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_j51gridgallery.ini</language>
+	</languages>
+	<config>	
+		<fields name="params">
+			
+			<fieldset name="MOD_J51_GENERALSETTINGS">
+
+				<field name="j51_num_images" type="text" default="1" label="MOD_J51_NUMIMAGES" description="MOD_J51_NUMIMAGES_DESC" />
+				<field name="j51_randomize" type="radio" default="0" label="MOD_J51_RANDOMIZE" description="MOD_J51_RANDOMIZE_DESC" 
+				checked="checked" 
+				class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>	
+				<field name="j51_image_width" type="text" default="240" label="MOD_J51_IMAGE_WIDTH" description="MOD_J51_IMAGE_WIDTH_DESC" />
+				<field name="j51_image_width_tabl" type="text" default="150" label="MOD_J51_IMAGE_WIDTH_TABL" description="MOD_J51_IMAGE_WIDTH_TABL_DESC" />
+				<field name="j51_image_width_tabp" type="text" default="200" label="MOD_J51_IMAGE_WIDTH_TABP" description="MOD_J51_IMAGE_WIDTH_TABP_DESC" />
+				<field name="j51_image_width_mobl" type="text" default="250" label="MOD_J51_IMAGE_WIDTH_MOBL" description="MOD_J51_IMAGE_WIDTH_MOBL_DESC" />
+				<field name="j51_image_width_mobp" type="text" default="220" label="MOD_J51_IMAGE_WIDTH_MOBP" description="MOD_J51_IMAGE_WIDTH_MOBP_DESC" />
+				<field name="j51_image_margin_x" type="text" default="10" label="MOD_J51_IMAGE_MARGINH" description="MOD_J51_IMAGE_MARGINH_DESC" />
+				<field name="j51_image_margin_y" type="text" default="10" label="MOD_J51_IMAGE_MARGINV" description="MOD_J51_IMAGE_MARGINV_DESC" />	
+				<field name="j51_overlay_color" type="color" default="#1a1623" label="MOD_J51_OVERLAYCOLOR" description="MOD_J51_OVERLAYCOLOR_DESC" />	
+				<field name="j51_title_color" type="color" default="#3b3b3b" label="MOD_J51_TITLECOLOR" description="MOD_J51_TITLECOLOR_DESC" />
+				<field name="j51_bg_color" type="color" default="#ffffff" label="MOD_J51_BACKGROUNDCOLOR" description="MOD_J51_BACKGROUNDCOLOR_DESC" />
+				<field name="j51_text_color" type="color" default="#ffffff" label="MOD_J51_TEXTCOLOR" description="MOD_J51_TEXTCOLOR_DESC" />	
+				
+			</fieldset>
+			
+			
+			<fieldset name="IMAGES_01">
+				<field name="j51_image1" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt1" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title1" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text1" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption1" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url1" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl1" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url1" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class1" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_02">
+				<field name="j51_image2" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt2" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title2" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text2" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption2" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url2" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl2" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url2" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class2" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_03">
+				<field name="j51_image3" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt3" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title3" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text3" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption3" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url3" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl3" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url3" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class3" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_04">
+				<field name="j51_image4" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt4" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title4" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text4" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption4" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url4" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl4" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url4" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class4" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_05">
+				<field name="j51_image5" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt5" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title5" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text5" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption5" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url5" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl5" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url5" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class5" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_06">
+				<field name="j51_image6" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt6" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title6" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text6" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption6" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url6" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl6" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url6" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class6" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_07">
+				<field name="j51_image7" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt7" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title7" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text7" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption7" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url7" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl7" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url7" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class7" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_08">
+				<field name="j51_image8" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt8" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title8" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text8" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption8" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url8" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl8" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url8" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class8" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+			<fieldset name="IMAGES_09">
+				<field name="j51_image9" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt9" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title9" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text9" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption9" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url9" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl9" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url9" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class9" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_10">
+				<field name="j51_image10" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt10" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title10" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text10" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption10" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url10" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl10" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url10" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class10" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_11">
+				<field name="j51_image11" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt11" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title11" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text11" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption11" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url11" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl11" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url11" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class11" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_12">
+				<field name="j51_image12" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt12" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title12" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text12" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption12" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url12" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl12" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url12" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class12" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_13">
+				<field name="j51_image13" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt13" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title13" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text13" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption13" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url13" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl13" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url13" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class13" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_14">
+				<field name="j51_image14" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt14" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title14" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text14" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption14" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url14" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl14" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url14" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class14" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="IMAGES_15">
+				<field name="j51_image15" type="media" default="" label="MOD_J51_IMAGEPATH"  description="MOD_J51_IMAGEPATH_DESC" size="30" />
+				<field name="j51_image_alt15" type="text" size="60" default="" label="MOD_J51_IMAGEALT" description="MOD_J51_IMAGEALT_DESC" />
+				<field name="j51_title15" type="text" size="60" default="" label="MOD_J51_IMAGETITLE" description="MOD_J51_IMAGETITLE_DESC" />
+				<field name="j51_text15" type="textarea" filter="raw" rows="4" cols="42" default="" label="MOD_J51_IMAGETEXT" description="MOD_J51_IMAGETEXT_DESC" />
+				<field name="j51_disablecaption15" type="radio" default="no" label="MOD_J51_DISABLECAPTION" description="MOD_J51_DISABLECAPTION_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="image_url15" type="menuitem" default="45" label="MOD_J51_MENUITEM" description="MOD_J51_MENUITEM_DESC" published="1"/>
+				<field name="j51_disableurl15" type="radio" default="no" label="MOD_J51_DISABLEURL" description="MOD_J51_DISABLEURL_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="no">JNO</option>
+					<option value="yes">JYES</option>
+				</field>
+				<field name="target_url15" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_animate_class15" type="text" default="fadeInUp" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

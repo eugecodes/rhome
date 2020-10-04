@@ -1,0 +1,14 @@
+/* Body Padding */
+body {
+	padding:20px;
+}
+
+/* Article Image Margin */
+.contentpane img {
+	margin:10px !important;
+}
+
+/* Link Color */
+a {
+	color:#0088CC;
+}

@@ -1,0 +1,135 @@
+div.ig_toolbar{
+margin-bottom: 5px;
+overflow: auto;
+}
+
+div.ig_button{
+float: left;
+border: 1px solid #8c8c8c;
+border-radius: 3px;
+margin: 3px 5px 3px 0px;
+}
+
+div.ig_button:hover{
+background-color: #ececec!important;
+}
+
+div.ig_button a{
+text-decoration: none;
+padding: 5px 5px 5px 22px;
+display: block;
+}
+
+div.ig_button a:hover{
+background-color: transparent!important;
+color: inherit!important;;
+}
+
+
+div.button_new{
+background: url('../images/admin/add.png') 2px center no-repeat;
+}
+
+div.button_pub{
+background: url('../images/admin/tick.png') 2px center no-repeat;
+}
+
+div.button_unpub{
+background: url('../images/admin/publish.png') 2px center no-repeat;
+}
+
+div.button_apply{
+background: url('../images/admin/apply.png') 2px center no-repeat;
+}
+
+div.button_save{
+background: url('../images/admin/filesave.png') 2px center no-repeat;
+}
+
+div.button_cancel{
+background: url('../images/admin/cancel.png') 2px center no-repeat;
+}
+
+div.button_delete{
+background: url('../images/admin/trash.png') 2px center no-repeat;
+}
+
+div.button_back{
+background: url('../images/admin/back.png') 2px center no-repeat;
+}
+
+div.button_next{
+background: url('../images/admin/next.png') 2px center no-repeat;
+}
+
+
+table#ig_admin_table th{
+background-color: #F7F7F7;
+border-bottom: 1px solid #CCCCCC;
+border-left: 1px solid #FFFFFF;
+color: #666666;
+text-align: center;
+padding: 5px;
+}
+
+table#ig_admin_table td{
+background-color: #FFFFFF;
+border: 1px solid #FFFFFF;
+text-align: center;
+padding: 5px;
+color: #000000;
+}
+
+table#ig_admin_table tr.row1 td {
+background-color: #F0F0F0;
+border-top: 1px solid #FFFFFF;
+}
+
+table#ig_admin_table td a{
+color: #666666!important;
+text-decoration: none;
+}
+
+table#ig_admin_table td.cat_title{
+text-align: left!important;
+}
+
+table#ig_admin_table td a:hover{
+background-color: transparent!important;
+color: #222222!important;
+}
+
+div.ig_order_arrow{
+width: 40px;
+float: left;
+}
+
+td.ig_order{
+width: 100px;
+}
+
+td.ig_order input{
+float: right;
+width: 40px;
+}
+
+table.ig_form_table tr{
+border: none;
+}
+
+table.ig_form_table td{
+border: none;
+padding: 5px;
+}
+
+.ig_form_table select{
+height: auto!important;
+}
+
+td.ig_left_col{
+width: 25%;
+}
+
+div.plupload_header{
+display: none;
+}

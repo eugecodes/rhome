@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>J51_Icons</name>
+	<author>Joomla51</author>
+	<creationDate>Oct 2013</creationDate>
+	<copyright>Copyright (C)2011 Joomla51</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>http://www.joomla51.com</authorUrl>
+	<version>1.0</version>
+	<description>Icons Module by Joomla51</description>
+
+	<files>
+		<filename module="mod_j51icons">mod_j51icons.php</filename>
+		<filename module="mod_j51icons">mod_j51icons.xml</filename>
+		<filename module="mod_j51icons">helper.php</filename>
+		<filename module="mod_j51icons">License.txt</filename>		
+		<filename module="mod_j51icons">index.html</filename>
+		<folder>css</folder>
+		<folder>tmpl</folder>
+		<folder>fonts</folder>
+		<folder>language</folder>
+		<folder>js</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_j51icons.ini</language>
+	</languages>
+	<config>	
+		<fields name="params">
+			
+			<fieldset name="MOD_J51_GENERALSETTINGS">		
+				<field name="j51_icon_color" type="color" default="#3d3d3d" label="MOD_J51_ICONCOLOR" description="MOD_J51_ICONCOLOR_DESC" />
+				<field name="j51_icon_size" type="list" default="28" label="MOD_J51_ICONSIZE" description="MOD_J51_ICONSIZE_DESC">
+					<option value="22">22px</option>
+					<option value="24">24px</option>
+					<option value="26">26px</option>
+					<option value="28">28px</option>
+					<option value="30">30px</option>
+					<option value="32">32px</option>
+					<option value="34">34px</option>
+					<option value="36">36px</option>
+					<option value="38">38px</option>
+					<option value="40">40px</option>
+					<option value="42">42px</option>
+					<option value="44">44px</option>
+					<option value="46">46px</option>
+					<option value="48">48px</option>
+					<option value="50">50px</option>
+					<option value="52">52px</option>
+				</field>
+				<field name="j51_icon_opacity" type="list" default="0.4" label="MOD_J51_ICONOPACITY" description="MOD_J51_ICONOPACITY_DESC">
+					<option value="1">No Opacity</option>
+					<option value="0.1">0.1</option>
+					<option value="0.2">0.2</option>
+					<option value="0.3">0.3</option>
+					<option value="0.4">0.4</option>
+					<option value="0.5">0.5</option>
+					<option value="0.6">0.6</option>
+					<option value="0.7">0.7</option>
+					<option value="0.8">0.8</option>
+					<option value="0.9">0.9</option>
+				</field>
+				<field name="j51_icon_columns" type="list" default="4" label="MOD_J51_ICONCOL" description="MOD_J51_ICONCOL_DESC">
+					<option value="auto">1 Column</option>
+					<option value="50%">2 Column</option>
+					<option value="33.3%">3 Column</option>
+					<option value="25%">4 Column</option>
+				</field>
+				<field name="j51_icon_align" type="list" default="center" label="MOD_J51_ICONALIGN" description="MOD_J51_ICONALIGN_DESC">
+					<option value="left">Left</option>
+					<option value="center">Center</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="j51_icon_margin_x" type="text" default="20" label="MOD_J51_ICON_MARGINX" description="MOD_J51_ICON_MARGINX_DESC" />
+				<field name="j51_icon_margin_y" type="text" default="20" label="MOD_J51_ICON_MARGINY" description="MOD_J51_ICON_MARGINY_DESC" />
+			</fieldset>
+			
+			
+			<fieldset name="ICON_01">
+				<field name="j51_icon1" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl1" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl1" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt1" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title1" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc1" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class1" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="ICON_02">
+				<field name="j51_icon2" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl2" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl2" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt2" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title2" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc2" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class2" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="ICON_03">
+				<field name="j51_icon3" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl3" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl3" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt3" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title3" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc3" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class3" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="ICON_04">
+				<field name="j51_icon4" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl4" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl4" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt4" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title4" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc4" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class4" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="ICON_05">
+				<field name="j51_icon5" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl5" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl5" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt5" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title5" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc5" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class5" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="ICON_06">
+				<field name="j51_icon6" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl6" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl6" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt6" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title6" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc6" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class6" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="ICON_07">
+				<field name="j51_icon7" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl7" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl7" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt7" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title7" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc7" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class7" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			<fieldset name="ICON_08">
+				<field name="j51_icon8" type="text" default="" label="MOD_J51_ICON" description="MOD_J51_ICON_DESC" />
+				<field name="j51_iconurl8" type="text" filter="raw" default="" label="MOD_J51_ICONURL" description="MOD_J51_ICONURL_DESC" />
+				<field name="j51_targeturl8" type="radio" default="_self" label="MOD_J51_URLTARGET" description="MOD_J51_URLTARGET_DESC"
+				checked="checked" 
+				class="btn-group">
+					<option value="_self">JNO</option>
+					<option value="_blank">JYES</option>
+				</field>
+				<field name="j51_text_alt8" type="text" size="60" default="" label="MOD_J51_ICONALT" description="MOD_J51_ICONALT_DESC" />
+				<field name="j51_icon_title8" type="text" size="60" default="" label="MOD_J51_ICONTITLE" description="MOD_J51_ICONTITLE_DESC" />
+				<field name="j51_icon_desc8" type="textarea" size="60" default="" label="MOD_J51_ICONDESC" description="MOD_J51_ICONDESC_DESC" />
+				<field name="j51_animate_class8" type="text" default="" label="MOD_J51_ANIMATE" description="MOD_J51_ANIMATE_DESC" />
+			</fieldset>
+
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

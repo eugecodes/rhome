@@ -1,0 +1,44 @@
+/*-----------------------------------------------------------------------------------*/
+/* Custom CSS */
+/*-----------------------------------------------------------------------------------*/
+
+
+#logo{
+	width: 100%;
+}
+#logo span{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+#logo img{
+	display: inline!important;
+}
+.hornavmenu{
+	width: 100%;
+}
+.item-162, .item-161, .item-164, .item-163{
+	float: right!important;
+}
+@media screen and (max-device-width: 1060px) {
+ .slicknav_nav .item-162,.slicknav_nav .item-161,.slicknav_nav .item-164,.slicknav_nav .item-163{	
+   float: none!important;
+  }
+
+    
+}
+@media only screen and (max-width: 600px)
+{
+      #footermenu ul li{
+         float: none !important;
+    }
+  #footermenu {
+    float: none; 
+}
+  #footermenu ul li a{
+        border-right: 0px dotted #cbb778 !important;
+  }
+}
+.top-1 h3{
+	font-size: 18px;
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_igallery">
+        <section name="component">
+                <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+                <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+                <action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+                <action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+                <action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+                <action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+                <action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+
+                <action name="core.igalleryfront.access" title="FRONTEND_ACCESS" description="" />
+
+                <action name="core.igalleryfront.create" title="FRONTEND_CREATE_CATEGORY" description="" />
+
+                <action name="core.igalleryfront.edit" title="FRONTEND_EDIT_CATEGORY" description="" />
+                <action name="core.igalleryfront.edit.own" title="FRONTEND_EDIT_OWN_CATEGORY" description="" />
+
+                <action name="core.igalleryfront.delete" title="FRONTEND_DELETE_CATEGORY" description="" />
+                <action name="core.igalleryfront.delete.own" title="FRONTEND_DELETE_OWN_CATEGORY" description="" />
+
+                <action name="core.igalleryfront.edit.state" title="FRONTEND_EDIT_STATE_CATEGORY" description="" />
+                <action name="core.igalleryfront.edit.state.own" title="FRONTEND_EDIT_STATE_OWN_CATEGORY" description="" />
+
+                <action name="core.igalleryfront.upload" title="FRONTEND_UPLOAD_IMAGES" description="" />
+                <action name="core.igalleryfront.upload.own" title="FRONTEND_UPLOAD_OWN_IMAGES" description="" />
+
+                <action name="core.igalleryfront.editimage" title="FRONTEND_EDIT_IMAGE_DETAILS" description="" />
+                <action name="core.igalleryfront.editimage.own" title="FRONTEND_EDIT_OWN_IMAGE_DETAILS" description="" />
+
+                <action name="core.igalleryfront.deleteimage" title="FRONTEND_DELETE_IMAGE" description="" />
+                <action name="core.igalleryfront.deleteimage.own" title="FRONTEND_DELETE_OWN_IMAGE" description="" />
+
+                <action name="core.igalleryfront.editimage.state" title="FRONTEND_EDIT_STATE_IMAGE" description="" />
+                <action name="core.igalleryfront.editimage.state.own" title="FRONTEND_EDIT_STATE_OWN_IMAGE" description="" />
+        </section>
+
+        <section name="profile">
+                <action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+                <action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+                <action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+                <action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_EDITSTATE_COMPONENT_DESC" />
+                <action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+
+                <action name="core.igalleryfront.edit" title="FRONTEND_EDIT_CATEGORY" description="" />
+                <action name="core.igalleryfront.edit.own" title="FRONTEND_EDIT_OWN_CATEGORY" description="" />
+
+                <action name="core.igalleryfront.delete" title="FRONTEND_DELETE_CATEGORY" description="" />
+                <action name="core.igalleryfront.delete.own" title="FRONTEND_DELETE_OWN_CATEGORY" description="" />
+
+                <action name="core.igalleryfront.edit.state" title="FRONTEND_EDIT_STATE_CATEGORY" description="" />
+                <action name="core.igalleryfront.edit.state.own" title="FRONTEND_EDIT_STATE_OWN_CATEGORY" description="" />
+
+                <action name="core.igalleryfront.upload" title="FRONTEND_UPLOAD_IMAGES" description="" />
+
+                <action name="core.igalleryfront.editimage" title="FRONTEND_EDIT_IMAGE_DETAILS" description="" />
+                <action name="core.igalleryfront.editimage.own" title="FRONTEND_EDIT_OWN_IMAGE_DETAILS" description="" />
+
+                <action name="core.igalleryfront.deleteimage" title="FRONTEND_DELETE_IMAGE" description="" />
+                <action name="core.igalleryfront.deleteimage.own" title="FRONTEND_DELETE_OWN_IMAGE" description="" />
+
+                <action name="core.igalleryfront.editimage.state" title="FRONTEND_EDIT_STATE_IMAGE" description="" />
+                <action name="core.igalleryfront.editimage.state.own" title="FRONTEND_EDIT_STATE_OWN_IMAGE" description="" />
+        </section>
+</access>

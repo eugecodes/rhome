@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Default Styling */
+.hi-icon-wrap {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.hi-icon {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+}
+a.hi-icon {
+	cursor: pointer;
+}
+
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.hi-icon:before {
+	font-family: 'FontAwesome';
+	speak: none;
+	font-size: 48px;
+	line-height: 90px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+.hi-icon[class^="fa-"]:before, .hi-icon[class*=" fa-"]:before {
+    padding-right: 0px;
+}
+
+/* Text */
+.j51_icon > h3, .j51_icon > p {
+    text-align: center;
+    position: relative;
+}
+.j51_icon > h3 {
+    margin-bottom: 25px;
+    font-size: 25px;
+    position: relative;
+}
+.j51_icon > h3:after {
+	background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    content: "";
+    display: block;
+    height: 4px;
+    position: relative;
+    top: 14px;
+    left: 50%;
+    margin-left: -25px;
+    width: 50px;
+}
+.j51_icon > p {
+	margin-bottom: 0;
+}
+.j51_icon {
+	position: relative;
+  	-moz-box-sizing: border-box; 
+  	-webkit-box-sizing: border-box; 
+  	box-sizing: border-box;
+	-webkit-transition: all 0.4s;
+	-moz-transition: 	all 0.4s;
+	transition: 		all 0.4s;
+	margin: 0;
+	color: rgba(0,0,0,0.8);
+	border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.j51_icon:hover {
+	/*background: linear-gradient(to bottom, rgba(0,0,0, 0.07) 0%, rgba(0,0,0, 0.03) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+	/*box-shadow: inset 3px 0px 15px rgba(0,0,0,0.05), inset -3px 0px 15px rgba(0,0,0,0.05);*/
+}
+
+.j51_icon span {
+	margin: 10px 0 0px 0;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* Animation */
+.hi-icon-effect-9 .hi-icon {
+	-webkit-transition: all 0.4s;
+	-moz-transition: 	all 0.4s;
+	transition: 		all 0.4s;
+}
+
+.hi-icon-effect-9 .hi-icon:after {
+	top: 0;
+	left: 0;
+	padding: 0;
+	box-shadow: 0 0 0 4px #000;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	transition: transform 0.2s, opacity 0.2s;
+}
+
+.no-touch .hi-icon-effect-9b .j51_icon:hover a.hi-icon {
+	color: #fff;
+	text-decoration: none
+}
+.no-touch .hi-icon-effect-9b .j51_icon:hover [class^="fa-"]:before,
+.no-touch .hi-icon-effect-9b .j51_icon:hover [class*=" fa-"]:before {
+	color: #ffffff !important;
+}
+
+.hi-icon-wrap > a:first-of-type .j51_icon {
+	border-left: none;
+}
+.hi-icon-wrap > a:last-of-type .j51_icon {
+	border-right: none;
+}
+/* Responsive */
+@media only screen and (max-width: 767px) {
+.j51_icon {width:100% !important}
+}

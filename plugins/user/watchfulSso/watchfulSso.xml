@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="user" method="upgrade">
+    <name>User - Watchful SSO</name>
+    <author>Watchful.li</author>
+    <creationDate>2015-09-16</creationDate>
+    <license>GPL</license>
+    <authorEmail>info@watchful.li</authorEmail>
+    <authorUrl>http://watchful.li</authorUrl>
+    <version>1.1</version>
+    <description><![CDATA[
+  <img src="https://watchful.li/app/images/logo.png" style="float: left;margin: 0 10px 10px 0" />
+  <h1>Watchful SSO - User Plugin</h1>
+  <p>Used for manage local SSO User</p>
+  ]]></description>
+    <scriptfile>install.php</scriptfile>
+    <files>
+        <filename plugin="watchfulSso">watchfulSso.php</filename>
+        <filename>index.html</filename>
+    </files>
+</extension>

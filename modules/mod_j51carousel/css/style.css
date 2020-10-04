@@ -1,0 +1,31 @@
+.owl-carousel .owl-stage-outer {
+	height: auto !important;
+}
+.owl-prev, .owl-next {
+    background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    color:#000;
+}
+.owl-prev {
+	margin-right:10px;
+}
+.owl-dot {
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin: 15px 5px 0;
+    width: 10px;
+}
+.owl-dot.active {
+	background: rgba(0,0,0,0.4);
+}
+.text-light .owl-prev, .text-light .owl-next {
+	color: #fff;
+}

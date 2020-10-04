@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="watchfulliApps" method="upgrade">
+    <name>SSO App fo Watchful</name>
+    <author>Watchful.li</author>
+    <creationDate>2015-09-16</creationDate>
+    <license>GPL</license>
+    <authorEmail>info@watchful.li</authorEmail>
+    <authorUrl>http://watchful.li</authorUrl>
+    <version>1.1</version>
+    <description><![CDATA[
+  <img src="https://watchful.li/app/images/logo.png" style="float: left;margin: 0 10px 10px 0" />
+  <h1>SSO App fo Watchful</h1>
+  <p>Delete local SSO User which no longer exists in the Watchful SSO API</p>
+  ]]></description>
+    <files>
+        <filename plugin="ssoApp">ssoApp.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <scriptfile>install.php</scriptfile>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="debug" type="radio" default="0" label="Debug" description="If enabled, additional alerts will be generated for debug purposes">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

@@ -1,0 +1,88 @@
+img {max-width: 100% ;} 
+
+
+/* #Tablet (Landscape)
+================================================== */
+
+@media only screen and (max-width: 1024px) {
+
+.wrapper960, #header_items, .hornavmenu {width:95% !important;}
+#header, #logo {width:100% !important;}
+/* Hide default hornav menu */
+#hornav {display:none !important;}
+/* Show mobile hornav menu */
+.slicknav_menu {display:block;}
+
+}
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+    
+    
+@media only screen and (max-width: 959px) {
+	
+
+.sidecol_a, .sidecol_b {
+	width:100% !important;
+}
+#content_remainder {
+	width: 100% !important;
+}
+.sidecol_b .sidecol_block {padding:0px;}
+#container_slideshow {
+	padding-top:0px;
+}
+#container_spacer1 {
+    display:none;
+}
+#container_slideshow .wrapper960 {width:100% !important;}
+#body_bg {
+    box-shadow: none;
+}
+/* Remove Modules */
+#socialmedia, #search {display:none;}
+
+}
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+@media only screen and (max-width: 767px) {
+
+.items-row .item {
+	width:100% !important;
+}
+.top-1, .top-2, .top-3, .contenttop, .contentbottom, .bottom-1, .bottom-2, .base-1, .base-2 {
+	width:100% !important;
+}
+.slidesjs-previous.slidesjs-navigation, .slidesjs-next.slidesjs-navigation {
+margin-top: -25px;
+}
+.maincontent img {
+	margin: 0px 5px !important;
+}
+
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 440px) {
+
+#container_main .wrapper960 {
+    margin-top: 0px;
+}
+#footermenu {
+    float: left;
+}
+
+}
+
+

@@ -1,0 +1,202 @@
+.layerslideshow *,
+.layerslideshow *:before,
+.layerslideshow *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+}
+.layerslideshow .blocks-box,
+.layerslideshow .slick-slider {
+  margin: 0;
+  padding: 0!important;
+}
+.layerslideshow .slick-slide {
+  float: left ;
+  padding: 0;
+}
+.layerslideshow .img-fill {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.25);
+}
+.layerslideshow .img-fill img {
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: none;
+}
+.layerslideshow .info {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  padding: 30px 60px;
+  text-align: right;
+  opacity: 0.9;
+}
+.layerslideshow .info > div {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: inline-block !important;
+  vertical-align: middle;
+  padding: 20px 30px;
+  animation: fadeInDown 1s both 0.5s;
+}
+.layerslideshow .NextArrow,
+.layerslideshow .PrevArrow {
+  position: absolute;
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 0 none;
+  margin-top: -22.5px;
+  text-align: center;
+  font: 20px/45px FontAwesome;
+  color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+.layerslideshow .NextArrow {
+  right: 0px;
+}
+.layerslideshow .NextArrow:before {
+  content: '\f105';
+}
+.layerslideshow .PrevArrow {
+  left: 0px;
+}
+.layerslideshow .PrevArrow:before {
+  content: '\f104';
+}
+.layerslideshow .slidelink {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* ==== Slider Style === */
+.layerslideshow .item h3 {
+  font-weight: 400;
+  font-size: 1.4em;
+  animation: fadeOut 1s both;
+  margin: 0 0px 4px;
+}
+.layerslideshow .item p {
+  margin: 0;
+  max-width: 300px;
+  overflow: hidden;
+  animation: fadeOut 1s both;
+}
+.layerslideshow .item i {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  color: #FFF;
+  max-width: 600px;
+  overflow: hidden;
+  height: 60px;
+  animation: fadeOut 1s both;
+}
+.layerslideshow .item i:before {
+  color: white;
+}
+.layerslideshow .item.slick-active h3 {
+  animation: fadeInDown 1s both 0.5s;
+}
+.layerslideshow .item.slick-active p {
+  animation: fadeIn 1s both 1s;
+}
+.layerslideshow .item.slick-active i {
+  animation: fadeIn 1s both 1.5s;
+}
+/*.layerslideshow .item.slick-active{
+  animation:Slick-FastSwipeIn 1s both;
+}*/
+/* ==== Slick Slider Css Ruls === */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: '';
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  display: none;
+  float: left /* If RTL Make This Right */;
+  height: 100%;
+  min-height: 1px;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+@media only screen and (max-width: 1024px) {
+  .layerslideshow .img-fill img {
+    max-width: 100%;
+    min-height: auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .layerslideshow .info {
+    display: none;
+  }
+}

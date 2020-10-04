@@ -1,0 +1,706 @@
+/* Read More */
+.readon, .readmore a {
+line-height: 20px;
+margin:3px 0;
+padding: 3px 10px;
+vertical-align:middle;
+}
+a.readon:link, a.readon:visited, .readmore a:link, .readmore a:visited  {text-decoration:none;}
+a.readon:hover, .readmore a:hover {text-decoration:underline;}
+
+/* Pagination */
+.pagination {margin: 0 0 25px;}
+.pagination ul {margin: 0;}
+.pagination li a, .pagination li span {
+background: none repeat scroll 0 0 #E6E6E6;
+border: 1px solid #dddddd;
+display: inline-block;
+overflow: hidden;
+padding: 8px 15px;
+margin: 0 2px;
+}
+.pagination li a:hover {background: #ffffff;}
+.pagination li a {
+color: #444444;
+}
+.pagination li span {
+color: #999999;
+}
+.pagination li:last-child a, .pagination li:last-child span {
+border-radius: 0 6px 6px 0;
+}
+.pagination li:first-child a, .pagination li:first-child span {
+border-radius: 6px 0 0 6px;
+}
+ 
+ /* PDF & Print Buttons */
+.actions{margin:0; padding:0;}
+.actions li{list-style:none; background-image:none; display:inline; border:0; padding: 0px !important; margin: 0px 10px 0px 0px;} 
+
+/* Login Form */
+#form-login, #form-login-username label, #form-login, #form-login-password label {display:block;}
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child {height:18px;}
+fieldset {border:0px;}
+
+[class^="icon-"], [class*=" icon-"] {
+	background-position: 14px 14px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;}
+	
+[class^="icon-"], [class*=" icon-"] {
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	width: 14px;
+	margin-top: 1px;
+}
+
+/* START STYLING AND LAYOUT FOR (MENU ITEM -- CATEGORY BLOG) */
+/*leading article styling*/
+.items-leading{margin: 0px 0px 0px 0px;}
+.items-leading h2{ font-style: normal;}
+.items-leading h2 a, .items-leading h2 a:hover, .items-leading h2 a:active, .items-leading h2 a:link{text-decoration:none;}
+
+/*styling for each row which contains columns*/
+.items-row h2, .cols-2 h2, .row-0 h2 {width:99%; }
+.items-row a, .cols-2 a, .row-0 h2 a, .items-row a:hover, .cols-2 a:hover, .row-0 h2 a:hover, .items-row a:active, .cols-2 a:active, .row-0 h2 a:active, .items-row a:link, .cols-2 a:link, .row-0 h2 a:link{text-decoration:none;}
+
+/*Category Blog Layout*/
+.items-row{margin-bottom:5px !important; padding-bottom:18px;}
+
+.blog-more{padding:10px 5px;}
+.item-separator {height:0px;}
+
+/* START STYLING FOR (MENU ITEM -- MORE ARTICLES) CLASS .ITEMS-MORE) */
+.items-more{padding-top:10px; list-style-image:none;}
+.items-more h3{font-weight:normal; margin:0; padding:5px 5px 5px 5px; font-size:1.4em;}
+.items-more ol{line-height:1.3em; list-style-type:none; margin:0; padding:0px 0px 0px 2px;}
+.items-more ol li{padding:2px;}
+.items-more ol li a{display:inline; margin:0; font-weight:normal; padding:5px 5px 5px 15px; }
+.items-more ol li a:hover, .items-more ol li a:active, .items-more ol li a:focus{font-weight:normal; padding:5px 5px 5px 15px;}
+
+/* Category Table Styling */
+table.category th a img{padding:2px 10px;}
+.filter-search{float:left;}
+.filter-search .inputbox{width:6em;}
+legend.element-invisible{position:absolute; margin-left:-3000px; margin-top:-3000px; height:0px;}
+.cat-items {margin-top:20px;}
+td.list-title, td.createdby, td.list-hits{}
+.table thead th {
+    border-bottom: none !important;
+}
+
+/* Start Tables Styling */
+table{border:none;}
+table.category .createdby, table.category .list-hits, table.category .cat-list-row0, table.category .cat-list-row1 {color:#777;}
+table.weblinks, table.category {font-size:1em; margin:10px 10px 40px 0px; width:99%;}
+table.weblinks td{ border-collapse:collapse;}
+table.weblinks td, table.category td{padding:7px;}
+table.weblinks th, table.category th{padding:7px; text-align:left;}
+td.list-title a {text-decoration: none;}
+td.num{vertical-align:top; text-align:left;}
+td.hits{vertical-align:top; text-align:center;}
+td p{margin:0; line-height:1.3em;}
+.filter{margin:10px 0px;}
+.display-limit,.filter{text-align:right; margin-right:7px;}
+tr.even, .cat-list-row0{background-color:rgba(255,255,255,0.2); border-top: 1px solid rgba(255,255,255,0.2); border-bottom: 1px solid rgba(255,255,255,0.2);}/*-- USE THIS TO STYLE EVERY SECOND ROW IN THE CATEGORY TABLE --*/
+tr.odd, .cat-list-row1{}/*-- USE THIS TO STYLE EVERY SECOND ROW IN THE CATEGORY TABLE --*/
+table.weblinks th, table.newsfeeds th, table.category th, table.jlist-table th{border-bottom: 1px solid #DDDDDD; font-size:16px;}
+table.weblinks th a, table.newsfeeds th a, table.category th a, table.jlist-table th a, table.weblinks th, table.newsfeeds th, table.category th, table.jlist-table th {}
+table.category th a img {border:solid 0px ;}
+
+/* for opera */
+tr, td{border:none;}
+#main table.moduletable td, #main table.moduletable tr {border:0;}
+fieldset.filters {border:solid 0px #ddd;}
+
+/* START STYLING FOR(MENU ITEM TYPE -- LIST ALL CATEGORIES) */
+.categories-listalphabet ul{padding:0; margin:20px 10px 10px 0; list-style-type:none; list-style-position:inside;}
+.categories-listalphabet ul li{display :inline; padding:5px; border-right:solid 1px #ddd;}
+.categories-list ul{list-style-type:none; list-style-image:none; margin:0; padding:0;}
+.categories-list ul ul{margin:15px; padding:0;}
+.cat-children{padding-left:5px;}
+.cat-children ul dl dt, .cat-children ul dl dd, dl.article-count dt, dl.article-count dd{display:inline;}
+.cat-children ul{list-style-type:none; list-style-image:none; margin:0; padding:0;}
+.cat-children ul{margin:10px 10px 10px 10px;}
+.cat-children ul ul{margin:20px;}
+.cat-children ul li{margin:10px 0 10px 0;}
+
+.categories-module, .category-module{margin: 10px 0 10px 0; padding: 0 0 0 20px;}/*layout for list of categories in Article Categories Module and Article Category in Article Category Module*/
+
+.cat-children ul dl dt, .cat-children ul dl dd, dl.article-count dt, dl.article-count dd {margin: 0px 2px; display: inline;}
+
+/* START STYLING FOR (MENU ITEM -- LIST ALL CONTACT CATEGORIES, LIST CONTACTS IN A CATEGORY, SINGLE CONTACT, FEATURED CONTACT) */
+/* Start Styling for Contact - Slider */
+.contact {padding:15px;}
+#contact-slider{margin-top: 10px;}
+#contact-slider .pane-toggler-down, #contact-slider .pane-toggler{ margin-bottom:1px; margin-top:0px; padding:5px; background-color:#eee; border:solid 1px #ccc;}
+#contact-slider a, #contact-slider h3{text-decoration:none; font-size:14px; border:none;}
+#contact-slider .contact-form, #contact-slider .contact-image, #contact-slider .contact-miscinfo{margin:10px 0px;}
+#contact-slider .pane-slider{padding: 0px 10px; border:solid 1px #ccc; clear: both;}
+
+.contact-category .item-title a {}
+.contact-category h2 {padding:10px 0 0 10px !important;}
+
+/* Forms */
+.inputbox, .textarea, .registration input, .login input, .contact-form input, #jform_contact_message {
+	border:solid 1px #DDDDDD;
+	margin: 3px 0;
+	padding: 3px 8px;
+	background:#F0F0F0;
+	font-size:-.9em;
+	-moz-box-shadow:0 1px 1px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.1) inset;
+	-webkit-transition: all 200ms ease-out;
+	-moz-transition: all 200ms ease-out;
+	-o-transition: all 200ms ease-out;
+	transition: all 200ms ease-out;}
+	
+.login-fields label {min-width:100px; display:block;}
+
+#login-form .icon-arrow-right {
+    display: none;
+}
+
+/* Single Contact Form H3 header */
+.contact h3{ margin-bottom:20px; margin-top:20px; padding:5px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #ccc;}
+
+/* Contact Tabs */
+dl.tabs {float:left; margin: 50px 0 0 0; z-index: 50; clear:both;}
+dl.tabs h3 {margin:0px; padding:0px;}
+dl.tabs dt {float:left; padding: 4px 10px; border-left: 1px solid #ccc; border-right: 1px solid #ccc; border-top: 1px solid #ccc; margin-right: 3px; background: #f0f0f0; color: #666;}
+dl.tabs dt.open {background: #F9F9F9; border-bottom: 1px solid #F9F9F9; z-index: 100; color: #000;}
+div.current {clear: both; border: 1px solid #ccc; padding: 10px 10px;}
+div.current dd {padding: 0; margin: 0;}
+dl#content-pane.tabs {margin: 1px 0 0 0;}
+
+/* Mod Languages */
+.lang-inline li a {
+background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+display: inline-block;
+padding: 0;
+}
+.mod-languages ul li {
+display: inline-block;
+padding: 4px 2px;
+}
+
+/* Mod Stats  */
+.stats-module dl {margin:10px 0 10px 0}
+.stats-module dt {float:left; margin:0 10px 0 0; font-weight: bold;}
+.stats-module dt,   .stats-module dd {padding:2px 0 2px 0 }
+
+/* Search Results */
+form#searchForm {
+	margin-top: 20px;
+}
+form#searchForm fieldset.word {
+	margin-left: 16px;
+}
+form#searchForm fieldset.word label, form#searchForm fieldset.word button {
+	margin: 0 12px 0 0;
+}
+.searchintro {
+	font-size: 12px;
+	margin: 10px;
+	text-transform: uppercase;
+}
+.search-results {
+	margin: 0 0 20px;
+	padding: 0 5px 24px;
+}
+.search-results small {
+	font-size: 11px;
+}
+.search .form-limit {
+	float: right;
+	margin: 0 10px;
+}
+.search .form-limit label {
+	float: left;
+	line-height: 30px;
+	padding-right: 10px;
+}
+fieldset.word {
+	padding: 8px 0;
+}
+fieldset.phrases, fieldset.only {
+	border-top: 1px solid #EEEEEE;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+fieldset.phrases legend, fieldset.only legend {
+	color: #333333;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0 8px;
+	text-transform: uppercase;
+}
+.phrases-box {
+	float: left;
+}
+.ordering-box {
+	float: left;
+	margin: -5px 0 0 20px;
+}
+.ordering-box select {
+	margin-top: 0 !important;
+}
+.ordering-box label {
+	float: left;
+	margin-right: 5px;
+}
+#searchForm p.counter {
+	font: bold 11px Arial,Helvetica,sans-serif;
+	margin: 32px 12px 0;
+	text-transform: uppercase;
+}
+.search-results dt.result-title {
+	display: block;
+	font-size: 140%;
+	font-weight: normal;
+	margin: 0;
+	padding: 3px 0 10px 0;
+	text-transform: none;
+	width: 100%;
+}
+.search-results dt.result-title:first-child {
+	border-top: 1px solid #EEEEEE;
+	clear: both;
+	margin: 12px 0 0;
+	padding: 30px 0 10px 0;
+}
+.search-results dd.result-category {
+	color: #888888;
+	float: left;
+	font-size: 13px;
+	font-style: italic;
+	margin: -4px 10px 0 0;
+}
+.search-results dd.result-created {
+	border-bottom: 1px solid #EEEEEE;
+	color: #888888;
+	font-size: 10px;
+	margin-bottom: 12px;
+	padding: 0 0 6px;
+	text-align: right;
+}
+.search-results .result-text {
+	color: #666666;
+	font-size: 12px;
+	line-height: 18px;
+}
+.search-results p {
+	color: #878787;
+	font-size: 11px;
+	margin: 0 0 10px 26px;
+}
+.search-results p span {
+	font-size: 11px;
+}
+#search-searchword {
+	width: 260px;
+}
+.hidelabeltxt {
+	display: none;
+}
+
+/* Misc  */
+ul#archive-items li {list-style:none; padding:0px; margin:0px; background-image:none;}
+
+#mailto-window h2 {color:#000000;}
+#mailto-window {background:#f5f5f5; padding:15px; border:solid 1px #ddd; position:relative}
+#mailto-window label{width:10em}
+.mailto-close{position:absolute; right:0; top:5px; background:none; }
+.mailto-close a {background:#f5f5f5 url(../images/close.png) no-repeat !important;min-width:25px; display:block;min-height:25px;overflow:visible}
+.mailto-close a  span{position:absolute; left:-3000px; top:-3000px; display:inline}
+#mailto-window  .inputbox{background:url("../images/content_bg.gif") repeat-x scroll 0 0 #FFFFFF; border:1px solid #ccc; padding:3px;}
+#mailto-window p{margin-top:20px}
+#mailto-window button{margin:0 5px 0 0}
+.clr{clear:both;} 	
+
+body.contentpane {background: none repeat scroll 0 0 #FFFFFF;}
+body.contentpane {margin: 10px; text-align: left;width: auto;}
+
+/* Edit */
+form#adminForm {padding:0px;}
+legend {padding:3px 5px; border-color: rgba(0,0,0,0.2); color: rgba(0,0,0,0.5);}
+.edit form#adminForm legend {font-weight:bold}
+.edit form#adminForm fieldset{padding:20px 15px; margin:10px 0 15px 0; border:1px solid #aaa;}
+
+.formelm{margin:5px 0}
+.formelm label{width:13em; display:inline-block; vertical-align:top;}
+form#adminForm .formelm-area{padding:5px 0}
+form#adminForm .formelm-area label {vertical-align:top; display:inline-block; width:7.9em}
+form#adminForm{border:solid 0px #000}
+.formelm-buttons{text-align:right; margin-bottom:10px}
+form.editor fieldset{border:solid 1px #ccc;}
+
+a.modal-button, .button2-left .blank a, .button2-left a, .button2-left div.readmore a {
+	padding:4px !important; 
+	margin:0 !important; 
+	line-height:1.2em; 
+	text-decoration:none; 
+	margin-top:10px !important}
+
+.contentpaneopen_edit img {border:0}
+#editor-xtd-buttons {padding: 0px;}
+.button2-left, .button2-right, .button2-left div, .button2-right div {float: left;}
+.button2-left a, .button2-right a, .button2-left span, .button2-right span {display: block; float: left; color: #666; cursor: pointer;}
+.button2-left span, .button2-right span {cursor: default; color: #999;}
+.button2-left .page a, .button2-right .page a, .button2-left .page span, .button2-right .page span {padding: 0 6px;}
+.button2-left a:hover,.button2-right a:hover {text-decoration: none; color: #0B55C4;}
+.button2-left a,.button2-left span {padding: 0 24px 0 6px;}
+.button2-right a, .button2-right span {padding: 0 6px 0 24px;}
+.button2-left, .button2-right {float: left; margin-left: 5px;}
+.button2-left .readmore a {color:#666666; margin-right:0px;}
+
+table.contentpaneopen, table.contentpane, table.blog {width:100%;}
+.maincontent .search {width:auto; text-align:left !important;}
+.ordering-box .inputbox, .form-limit .inputbox {background-image:none !important; height:26px;}
+#ordering, #limit {background:#eee;}
+
+
+/* -- JOOMLA 3 -- */
+
+/* Buttons */
+.content_vote .btn, .btn.dropdown-toggle, .pager.pagenav a {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 4px 14px;
+	margin-bottom: 0;
+	font-size: 13px;
+	line-height: 18px;
+	*line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #333;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+}
+.dropdown-menu.actions {
+    padding: 5px 0;
+}
+.btn .caret {
+    border-top: 4px solid #FFFFFF !important;
+}
+
+/*Required*/
+.clearfix:before,
+.clearfix:after {display: table; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/*search*/
+#search label {display: none;}
+
+/*pagination*/
+div.pagination ul.pagination span li span{border:none; }
+
+/*remove list style from buttons and bootstrap dropdown menus*/
+.btn-group > .btn, .btn-group > .dropdown-menu {list-style: none outside none;}
+
+/*login module*/
+#login-form {padding-top:8px;}
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child {height:18px;}
+div#form-login-remember.control-group{margin:5px 0px;}
+div#form-login-remember.control-group label.control-label{margin:1px 0px;}
+ul.unstyled li a{box-shadow:0px 0px 0px 0px; }
+
+/*login form*/
+ul.nav{list-style: none outside none !important; margin-left:0px;}
+
+/*web links and article category list*/
+.list-striped, .row-striped {list-style: none outside none !important;}
+ul.category{margin-left:0px;}
+.icon-arrow-right {margin-top:1px;}
+
+/*featured articles*/
+.items-more ul{list-style:none !important; margin-left:0px;}
+.contact-links ul{list-style: none outside none !important; margin-left:0px;}
+
+/*slider styling for contacts form*/
+div.contact div#slide-contact.accordion{margin-bottom: 18px; margin-top: 20px;}
+div.contact div#slide-contact.accordion div.accordion-group{margin-bottom: 2px; border: 1px solid rgba(0,0,0,0.2); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+div#slide-contact.accordion div.accordion-group div.accordion-heading{border-bottom: 0;}
+div.contact div#slide-contact.accordion div.accordion-group div.accordion-heading strong a.accordion-toggle{display: block;padding: 8px 15px;}
+div.contact div#slide-contact.accordion div.accordion-group div#basic-details.accordion-body div.accordion-inner{padding: 9px 15px; border-top: 1px solid rgba(255,255,255,0.2);}
+
+/*page navigation*/
+ul.pager{margin-left:0px;}
+
+/* Registration Form */
+.btn.btn-primary.validate {margin: 0 5px;}
+.registration .form-actions {background-color: rgba(255,255,255,0.1); border-top: 1px solid rgba(255,255,255,0.2);}
+
+/*All Sliders styling*/
+.accordion {margin-bottom: 18px;}
+.accordion-group {margin-bottom: 2px; border: 1px solid #e5e5e5; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;}
+.accordion-heading {border-bottom: 0;}
+.accordion-heading .accordion-toggle {display: block;padding: 8px 15px;}
+.accordion-toggle {cursor: pointer;}
+.accordion-inner {padding: 9px 15px;border-top: 1px solid rgba (255,255,255,0.2);}
+
+/*primary buttons*/
+/*button color*/
+.btn-primary {background-color: #99CC00; background-image: -moz-linear-gradient(center top , #99CC00, #99CC66); background-repeat: repeat-x; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);color: #FFFFFF; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);}
+/*button color on hover and active*/
+.btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {color: #000; background-color: #fff; *background-color: #fff;}
+
+/*Responsive select menu height fix*/
+.js .selectnav {height: 40px !important;}
+
+/* Breadcrumbs */
+.breadcrumb {
+	padding: 8px 15px;
+	margin: 2px 0 18px;
+	list-style: none;
+}
+.breadcrumb li {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.breadcrumb .divider {
+	padding: 0 5px;
+	color: #ccc;
+}
+.breadcrumb .active {
+	color: #999;
+}
+.breadcrumb {
+	background-color: transparent;
+	background-image: none;
+	border:none;
+	box-shadow:none;
+}
+
+/* Content Rating */
+.content_rating {padding:0 0 5px;}
+
+/* Article Header */
+.page-header {
+	border-bottom: none;
+	margin: 0px;
+	padding-bottom: 0px;
+}
+.categories-list .page-header {
+	padding-bottom:10px;
+}
+
+/* Article Details */
+dl.article-info {margin-bottom: 5px;}
+
+
+/* Button Group */
+.btn.dropdown-toggle {padding:4px 6px;}
+.icon-cog {margin:2px;}
+.btn-group {margin:0px 10px;}
+
+
+/* Category Blog */
+.blog .column-1, .blog .column-2, .blog .column-3, .blog .column-4 {
+	padding: 0 20px 0 0;
+	width: auto !important;
+}
+.items-more {
+	clear: both;
+}
+.pagination {
+	margin: 0;
+}
+
+.btn-toolbar .btn {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 4px 14px;
+	margin-bottom: 0;
+	font-size: 13px;
+	line-height: 18px;
+	*line-height: 18px;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+
+	*margin-left: .3em;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
+	font-weight:normal;
+}
+
+a.modal-button {margin:0 0 0 5px !important; padding:4px 14px;} 
+.edit form#adminForm fieldset {border:none;}
+#jform_publish_up_img, #jform_publish_down_img {margin-top:3px;}
+
+/* Editor */
+.nav-tabs {
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+	background-color: rgba(255,255,255,0.7);
+	border-color: rgba(255,255,255,0.0);
+}
+.modal.btn {
+	line-height:14px;
+}
+.input-append .add-on, .input-prepend .add-on {
+	text-shadow: none !important;
+	color:#ffffff;
+}
+
+/* Misc */
+.maincontent .blog  .icons {padding-bottom: 0px;}
+
+
+/* Article Images */
+.img-fulltext-left {	float: left;	margin-top: 10px;	margin-bottom: 20px;	margin-right: 20px;}
+.img-intro-left {	float: left;	margin-top: 0px;	margin-bottom: 10px;	margin-right: 10px;}
+.img-fulltext-right {	float: right;	margin-top: 10px;	margin-bottom: 20px;	margin-left: 20px;}
+.img-intro-right {	float: right;	margin-top: 0px;	margin-bottom: 10px;	margin-left: 10px;}
+.img-intro-none {	float: right;	margin-top: 10px;	margin-bottom: 10px;	margin-left: 10px;}
+.img-fulltext-none {	float: right;	margin-top: 10px;	margin-bottom: 20px;	margin-left: 20px;}
+.items-leading {overflow: hidden;}
+.item-image img {margin:20px 0px;}
+
+
+/* Frontend Editing */
+#modules-form .btn-group,
+#adminForm .btn-group {
+  right: auto;
+  margin-left: 0;
+}
+#modules-form .form-horizontal .control-label,
+#adminForm .form-horizontal .control-label {
+  padding-top: 0;
+}
+#modules-form hr,
+#adminForm hr {
+  border-color: #eeeeee;
+  border-image: none;
+  border-left: 0 none;
+  border-right: 0 none;
+  border-style: solid none;
+  border-width: 1px 0 0;
+  background-image: none;
+  margin: 0px 0;
+}
+#modules-form hr:before,
+#adminForm hr:before {
+  display: none;
+}
+#modules-form .btn,
+#adminForm .btn,
+#modules-form .btn-group.open .btn.dropdown-toggle,
+#adminForm .btn-group.open .btn.dropdown-toggle,
+#modules-form .input-append .add-on,
+#adminForm .input-append .add-on,
+#modules-form .input-prepend .add-on,
+#adminForm .input-prepend .add-on,
+#modules-form .pager.pagenav a,
+#adminForm .pager.pagenav a,
+#modules-form .btn-primary:active,
+#adminForm .btn-primary:active,
+#modules-form .btn-primary.active,
+#adminForm .btn-primary.active,
+#modules-form .btn-primary.disabled,
+#adminForm .btn-primary.disabled,
+#modules-form .btn-primary[disabled],
+#adminForm .btn-primary[disabled] {
+  background-color: #dddddd;
+  color: #333333 !important;
+}
+#modules-form .btn:hover,
+#adminForm .btn:hover,
+#modules-form .btn-group.open .btn.dropdown-toggle:hover,
+#adminForm .btn-group.open .btn.dropdown-toggle:hover,
+#modules-form .input-append .add-on:hover,
+#adminForm .input-append .add-on:hover,
+#modules-form .input-prepend .add-on:hover,
+#adminForm .input-prepend .add-on:hover,
+#modules-form .pager.pagenav a:hover,
+#adminForm .pager.pagenav a:hover,
+#modules-form .btn-primary:active:hover,
+#adminForm .btn-primary:active:hover,
+#modules-form .btn-primary.active:hover,
+#adminForm .btn-primary.active:hover,
+#modules-form .btn-primary.disabled:hover,
+#adminForm .btn-primary.disabled:hover,
+#modules-form .btn-primary[disabled]:hover,
+#adminForm .btn-primary[disabled]:hover {
+  background-color: #eeeeee;
+}
+#modules-form .btn,
+#adminForm .btn {
+  padding: 5px 12px;
+  color: #333333;
+  border: medium none;
+}
+#modules-form .btn.btn-primary,
+#adminForm .btn.btn-primary {
+  color: #333333;
+}
+#modules-form .btn:hover,
+#adminForm .btn:hover,
+#modules-form .btn:focus,
+#adminForm .btn:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+#modules-form .btn-success:hover,
+#adminForm .btn-success:hover,
+#modules-form .btn-success:focus,
+#adminForm .btn-success:focus,
+#modules-form .btn-success:active,
+#adminForm .btn-success:active,
+#modules-form .btn-success.active,
+#adminForm .btn-success.active,
+#modules-form .btn-success.disabled,
+#adminForm .btn-success.disabled,
+#modules-form .btn-success[disabled],
+#adminForm .btn-success[disabled] {
+  background-color: #51a351;
+  color: #ffffff;
+}
+#modules-form .btn-danger:hover,
+#adminForm .btn-danger:hover,
+#modules-form .btn-danger:focus,
+#adminForm .btn-danger:focus,
+#modules-form .btn-danger:active,
+#adminForm .btn-danger:active,
+#modules-form .btn-danger.active,
+#adminForm .btn-danger.active,
+#modules-form .btn-danger.disabled,
+#adminForm .btn-danger.disabled,
+#modules-form .btn-danger[disabled],
+#adminForm .btn-danger[disabled] {
+  background-color: #bd362f;
+  color: #fff;
+}
+.dropdown-menu > li > a {
+  padding: 3px 10px;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  margin-right: 0.5em;
+}
+.icons .btn-group {
+  top: -30px;
+}
+#jform_publish_up_img, #jform_publish_down_img {
+  margin-top: 0px;
+}
+.nav-tabs > li, .nav-pills > li {
+  list-style: outside none none !important; 
+}
+#modules-form .controls > .radio:first-child, #adminForm .controls > .checkbox:first-child {
+    padding-top: 0px;
+}
+#adminForm .input-append input {margin-top:0px !important;}

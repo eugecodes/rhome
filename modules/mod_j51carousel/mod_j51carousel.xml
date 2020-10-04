@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+	<name>J51_Carousel</name>
+	<author>Joomla51</author>
+	<creationDate>November 2014</creationDate>
+	<copyright>Copyright (C)2014 Joomla51</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>info@joomla51.com</authorEmail>
+	<authorUrl>http://www.joomla51.com</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[<link href="../modules/mod_j51carousel/css/admin.css" rel="stylesheet" type="text/css" media="all" />
+	<!--
+                  #wrap1 {padding:0px 0px 4px 0px;}
+                  h1 {clear:both;font-family: Arial Narrow,sans-serif;font-size:18px;margin:0px 0px 12px 0px;padding:0px 0px 1px 10px;color:#C64934; a:}
+                  .wrap2 {background:#fff;border:1px solid #8F8F8F;padding:10px; color:#403d6a;}
+                  -->
+                  </style><div class="templateinfo">
+	<p>J51-Carousel by Joomla51</p>
+	
+  	</div>
+  	]]>
+	</description>
+
+	<files>
+		<filename module="mod_j51carousel">mod_j51carousel.php</filename>
+		<filename module="mod_j51carousel">mod_j51carousel.xml</filename>
+		<filename module="mod_j51carousel">helper.php</filename>
+		<filename module="mod_j51carousel">License.txt</filename>		
+		<filename module="mod_j51carousel">index.html</filename>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<folder>elements</folder>
+		<folder>language</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_j51carousel.ini</language>
+	</languages>
+	<config>	
+		<fields name="params">
+			
+			<fieldset name="MOD_J51_GENERALSETTINGS">
+
+				<field name="j51_num_blocks" type="text" default="4" label="Number of Columns" description="Number of columns to display" />
+				<field name="j51_randomize" type="radio" default="0" label="MOD_J51_RANDOMIZE" description="MOD_J51_RANDOMIZE_DESC" 
+				checked="checked" 
+				class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j51_blocks_per_slide" type="list" default="1" label="Columns Per Slide" description="Columns to display in each slide" 
+				checked="checked" 
+				class="btn-group">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</field>
+
+				<field name="j51_boxed" type="radio" default="0" label="Box Columns" description="Box Columns" 
+				checked="checked" 
+				class="btn-group">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+
+				<field name="j51_horiz_padding" type="text" default="10" label="Horizontal Margin (px)" description="Horizontal Margin (px)" />
+				<field name="j51_vert_padding" type="text" default="10" label="Vertical Margin (px)" description="Vertical Margin (px)" />
+				
+				<field name="j51_transition_interval" type="text" default="3000" label="Transition Interval (ms)" description="MOD_J51_NUMIMAGES_DESC" />
+				<field name="j51_transition_duration" type="text" default="400" label="Transition Duration (ms)" description="MOD_J51_NUMIMAGES_DESC" />
+
+				<field name="j51_pagination" type="radio" default="true" label="Pagination" description="MOD_J51_RANDOMIZE_DESC" 
+				checked="checked" 
+				class="btn-group">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+
+				<field name="j51_navigation" type="radio" default="true" label="Navigation" description="MOD_J51_RANDOMIZE_DESC" 
+				checked="checked" 
+				class="btn-group">
+					<option value="false">JNO</option>
+					<option value="true">JYES</option>
+				</field>
+				<field name="j51_text_prev" type="text" default="Prev" label="Previous Button Text" description="Previous Button Text" />
+				<field name="j51_text_next" type="text" default="Next" label="Next Button Text" description="Next Button Text" />
+				<field name="j51_image_width_tabl" type="list" default="1" label="Columns (Tablet Landscape)" description="Columns (Tablet Landscape)" 
+				checked="checked" 
+				class="btn-group">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</field>
+				<field name="j51_image_width_tabp" type="list" default="1" label="Columns (Tablet Portrait)" description="Columns (Tablet Portrait)" 
+				checked="checked" 
+				class="btn-group">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</field>
+				<field name="j51_image_width_mobl" type="list" default="1" label="Columns (Mobile Landscape)" description="Columns (Mobile Landscape)" 
+				checked="checked" 
+				class="btn-group">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</field>
+				<field name="j51_image_width_mobp" type="list" default="1" label="Columns (Mobile Portrait)" description="Columns (Mobile Portrait)" 
+				checked="checked" 
+				class="btn-group">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</field>
+			</fieldset>
+			
+			<fieldset name="COLUMN_01">
+				<field name="j51_image1" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_02">
+				<field name="j51_image2" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_03">
+				<field name="j51_image3" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_04">
+				<field name="j51_image4" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_05">
+				<field name="j51_image5" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_06">
+				<field name="j51_image6" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_07">
+				<field name="j51_image7" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_08">
+				<field name="j51_image8" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_09">
+				<field name="j51_image9" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_10">
+				<field name="j51_image10" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_11">
+				<field name="j51_image11" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_12">
+				<field name="j51_image12" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_13">
+				<field name="j51_imag13" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+
+			<fieldset name="COLUMN_14">
+				<field name="j51_imag14" type="editor" width="300" filter="raw" label="MOD_J51_COLUMNCONTENT" />
+			</fieldset>
+			
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static">
+					<option
+						value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
